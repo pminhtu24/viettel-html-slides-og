@@ -1,0 +1,13 @@
+<div class="layout-grid grid-{{columns}}x{{rows}} animate-fade-up">
+    {{#each items}}
+    <div class="grid-item soft-panel">
+        {{#if image_src}}
+        <img src="{{image_src}}" alt="{{title}}" class="{{image_readability_class}}">
+        {{/if}}
+        <div class="grid-item-content">
+            <h4 class="feature-title" style="margin-top:0">{{title}}</h4>
+            <p class="feature-copy">{{copy}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

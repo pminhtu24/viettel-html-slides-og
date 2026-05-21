@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐIỂM NHẤN HOẠT ĐỘNG KINH DOANH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/slide-viettel-theme.css">
+</head>
+<body class="min-h-screen slide-16x9">
+    <div class="slide-shell tech-shell">
+        <div class="slide-content">
+            <header class="slide-header animate-fade-left">
+                <h1 class="slide-title">ĐIỂM NHẤN HOẠT ĐỘNG KINH DOANH</h1>
+                <p class="slide-subtitle">{{subtitle}}</p>
+            </header>
+
+            <main class="slide-main">
+                <div class="layout-icon-text-grid animate-fade-up">
+    
+    <div class="icon-box soft-panel">
+        <div class="icon-wrapper">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#D32F2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2L2 7l10 5 10-5-10-5z'/><path d='M2 17l10 5 10-5'/><path d='M2 12l10 5 10-5'/></svg>
+        </div>
+        <h4 class="icon-title">Hạ tầng 5G</h4>
+        <p class="icon-copy">Phủ sóng 5G tại 100% các thành phố trực thuộc tỉnh và 85% quận huyện.</p>
+    </div>
+    
+    <div class="icon-box soft-panel">
+        <div class="icon-wrapper">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#D32F2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 12h-4l-3 9L9 3l-3 9H2'/></svg>
+        </div>
+        <h4 class="icon-title">Tăng trưởng FTTH</h4>
+        <p class="icon-copy">23,6% so với cùng kỳ — dịch vụ Internet cáp quang dẫn đầu thị trường.</p>
+    </div>
+    
+    <div class="icon-box soft-panel">
+        <div class="icon-wrapper">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#D32F2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='M12 6v6l4 2'/></svg>
+        </div>
+        <h4 class="icon-title">NPS Cải thiện</h4>
+        <p class="icon-copy">Điểm NPS đạt 68 — tăng 7 điểm, thuộc nhóm dẫn đầu ngành viễn thông.</p>
+    </div>
+    
+    <div class="icon-box soft-panel">
+        <div class="icon-wrapper">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#D32F2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='3' width='20' height='14' rx='2' ry='2'/><line x1='8' y1='21' x2='16' y2='21'/><line x1='12' y1='17' x2='12' y2='21'/></svg>
+        </div>
+        <h4 class="icon-title">Viettel Cloud</h4>
+        <p class="icon-copy">Hợp tác AWS, mở rộng thị trường cloud solution ra quốc tế.</p>
+    </div>
+    
+</div>
+
+            </main>
+        </div>
+
+        <img src="./assets/viettel-logo.png" alt="Viettel logo" class="brand-logo">
+    </div>
+
+<script>
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      window.parent.postMessage({
+        type: "deck-navigation",
+        direction: event.key === "ArrowLeft" ? "left" : "right"
+      }, "*");
+    }
+  });
+</script>
+
+</body>
+</html>

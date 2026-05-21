@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KẾT QUẢ NỔI BẬT QUÝ I/2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/slide-viettel-theme.css">
+</head>
+<body class="min-h-screen slide-16x9">
+    <div class="slide-shell tech-shell">
+        <div class="slide-content">
+            <header class="slide-header animate-fade-left">
+                <h1 class="slide-title">KẾT QUẢ NỔI BẬT QUÝ I/2026</h1>
+                <p class="slide-subtitle">{{subtitle}}</p>
+            </header>
+
+            <main class="slide-main">
+                <div class="layout-highlight animate-scale-in">
+    <div class="highlight-number">38.500 tỷ</div>
+    <div class="highlight-quote">Tổng doanh thu Quý I/2026, tăng 16% so với cùng kỳ năm ngoái — mức tăng trưởng cao nhất trong 5 năm qua.</div>
+    <div class="highlight-caption">Nguồn: Báo cáo tài chính Viettel Telecom Qúy I/2026</div>
+</div>
+
+            </main>
+        </div>
+
+        <img src="./assets/viettel-logo.png" alt="Viettel logo" class="brand-logo">
+    </div>
+
+<script>
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      window.parent.postMessage({
+        type: "deck-navigation",
+        direction: event.key === "ArrowLeft" ? "left" : "right"
+      }, "*");
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="layout-comparison animate-fade-up">
+    <div class="comp-side">
+        <h3 class="comp-header">{{side_1_title}}</h3>
+        <ul class="comp-list">
+            {{#each side_1_items}}
+            <li class="comp-item"><span class="comp-item-marker">●</span> {{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="comp-side highlight">
+        <h3 class="comp-header">{{side_2_title}}</h3>
+        <ul class="comp-list">
+            {{#each side_2_items}}
+            <li class="comp-item"><span class="comp-item-marker">●</span> {{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

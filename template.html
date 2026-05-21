@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/slide-viettel-theme.css">
+</head>
+<body class="min-h-screen {{body_class}}">
+    <div class="slide-shell tech-shell">
+        <div class="slide-content">
+            <header class="slide-header animate-fade-left">
+                <h1 class="slide-title">{{title}}</h1>
+                <p class="slide-subtitle">{{subtitle}}</p>
+            </header>
+
+            <main class="slide-main">
+                {{layout_content}}
+            </main>
+        </div>
+
+        <img src="./assets/viettel-logo.png" alt="Viettel logo" class="brand-logo">
+    </div>
+
+<script>
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      window.parent.postMessage({
+        type: "deck-navigation",
+        direction: event.key === "ArrowLeft" ? "left" : "right"
+      }, "*");
+    }
+  });
+</script>
+
+</body>
+</html>
