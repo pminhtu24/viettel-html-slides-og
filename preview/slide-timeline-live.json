@@ -1,0 +1,33 @@
+{
+  "title": "Hanh Trinh Phat Trien Cua Viettel",
+  "subtitle": "Tu mot don vi quan doi nho den tap doan toan cau",
+  "layout": "timeline",
+  "slide_mode": "16x9",
+  "events": [
+    {
+      "date": "1989",
+      "title": "Thanh lap",
+      "copy": "Cong ty Phat trien Vien thong Quan doi duoc thanh lap ngay 15/6/1989, bat dau kinh doanh vien thong voi von dieu le chi 300 trieu dong."
+    },
+    {
+      "date": "1995",
+      "title": "Khoi dau Mobile",
+      "copy": "Trien khai he thong tram goc dau tien, chinh thuc buoc vao linh vuc vien thong di dong tai Viet Nam."
+    },
+    {
+      "date": "2004",
+      "title": "Thanh lap Viettel Telecom",
+      "copy": "Thanh lap Cong ty Vien thong Viettel (Viettel Telecom), mo rong quy mo kinh doanh tren toan quoc."
+    },
+    {
+      "date": "2009",
+      "title": "Thu nghiem 3G",
+      "copy": "Viettel la nha mang dau tien tai Viet Nam thu nghiem thanh cong cong nghe 3G, dan dat xu huong truyen thong di dong the he moi."
+    },
+    {
+      "date": "2016",
+      "title": "Viettel Global niem yet",
+      "copy": "Cong ty con Viettel Global (nay la Viettel Solutions) niem yet tren So Giao dich Chung khoan TP.HCM (HOSE)."
+    }
+  ]
+}

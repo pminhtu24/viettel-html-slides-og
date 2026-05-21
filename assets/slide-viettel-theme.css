@@ -558,6 +558,12 @@ body {
     gap: 0;
     position: relative;
     padding-left: 2rem;
+    padding-bottom: 1.75rem;
+}
+
+.slide-16x9 .layout-timeline {
+    transform: translateY(-30px);
+    padding-bottom: 4.5rem;
 }
 .layout-timeline::before {
     content: '';
@@ -570,7 +576,11 @@ body {
 }
 .timeline-item {
     position: relative;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.35rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
 }
 .timeline-marker {
     position: absolute;
@@ -590,7 +600,7 @@ body {
 }
 .timeline-content {
     background: white;
-    padding: 1.5rem;
+    padding: 1.2rem 1.25rem;
     border-radius: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
