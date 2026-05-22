@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Support icon">
+  <circle cx="32" cy="32" r="30" fill="#1F2937"/>
+  <path d="M22 31a10 10 0 0 1 20 0v8M22 32h-3v9h7v-9h-4zm20 0h3v9h-7v-9h4zM28 45h8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
