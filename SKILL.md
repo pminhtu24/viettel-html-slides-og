@@ -29,27 +29,28 @@ This skill automates the generation of HTML slides based on the Viettel slide th
 
 Use this guide to pick the right layout before writing any JSON. **Vary layouts across a deck** — using the same layout repeatedly makes slides feel repetitive and flat.
 
-| Layout | When to use | When NOT to use |
-|--------|------------|-----------------|
-| `section-divider` | Major deck sections / chapter transitions | As a content slide |
-| `agenda` | Opening slide listing topics or agenda items | Mid-deck content; needs ≥3 items to look good |
-| `timeline` | Sequential evolution, phased roadmap, chronological steps | When order doesn't matter; items are equal-rank |
-| `highlight` | One big number / key stat to punch in | Multiple metrics; detailed content |
-| `comparison` | Problem vs solution, before vs after, two approaches side-by-side | More than 2 sides; list-only content |
-| `data-table` | Structured numeric/text data, benchmarks, structured lists | Narrative prose; single idea |
-| `text-only` | Structured prose, concept explanation, detailed bullets | When a table or timeline fits better |
-| `icon-text-grid` | 3–4 parallel concepts with visual icons (overview cards) | When order/sequence matters; when data is structured |
-| `grid` | 2×2 or 3×3 image+text cards | No images available; ordered/side-by-side content |
-| `centered-image` | Single diagram, screenshot, architecture visual | Multiple images; no image provided |
-| `two-horizontal-images` | Two diagrams side-by-side, before/after visuals | Single image; more than 2 images |
-| `image-text-split` | One image with a paragraph alongside | Multiple concepts; no image |
-| `image-top-text-bottom` | Image as hero with explanation below | Tight data; multiple independent concepts |
+| Layout                  | When to use                                                       | When NOT to use                                      |
+| ----------------------- | ----------------------------------------------------------------- | ---------------------------------------------------- |
+| `section-divider`       | Major deck sections / chapter transitions                         | As a content slide                                   |
+| `agenda`                | Opening slide listing topics or agenda items                      | Mid-deck content; needs ≥3 items to look good        |
+| `timeline`              | Sequential evolution, phased roadmap, chronological steps         | When order doesn't matter; items are equal-rank      |
+| `highlight`             | One big number / key stat to punch in                             | Multiple metrics; detailed content                   |
+| `comparison`            | Problem vs solution, before vs after, two approaches side-by-side | More than 2 sides; list-only content                 |
+| `data-table`            | Structured numeric/text data, benchmarks, structured lists        | Narrative prose; single idea                         |
+| `text-only`             | Structured prose, concept explanation, detailed bullets           | When a table or timeline fits better                 |
+| `icon-text-grid`        | 3–4 parallel concepts with visual icons (overview cards)          | When order/sequence matters; when data is structured |
+| `grid`                  | 2×2 or 3×3 image+text cards                                       | No images available; ordered/side-by-side content    |
+| `centered-image`        | Single diagram, screenshot, architecture visual                   | Multiple images; no image provided                   |
+| `two-horizontal-images` | Two diagrams side-by-side, before/after visuals                   | Single image; more than 2 images                     |
+| `image-text-split`      | One image with a paragraph alongside                              | Multiple concepts; no image                          |
+| `image-top-text-bottom` | Image as hero with explanation below                              | Tight data; multiple independent concepts            |
 
 **Deck layout variety rule:** In a deck of N slides, aim to use at least 5–6 different layout types. If you find yourself reaching for `icon-text-grid` more than twice, stop and ask: could `timeline`, `comparison`, or `data-table` communicate this content better?
 
 **⚠️ Strict no-consecutive-repetition rule:** Two slides back-to-back must never share the same layout type. This applies to _all_ layouts — not just `icon-text-grid`. For example, two `timeline` slides in a row is just as flat as two `icon-text-grid` in a row. Before finalizing a deck, run through the layout sequence and confirm no two adjacent slides repeat the same layout. If the content naturally flows as a timeline, break it up with a `comparison` or `data-table` or `text-only` slide between consecutive timeline blocks.
 
 **Layout sequence checklist (do this before generating any slide):**
+
 1. Draft the full slide list with layout types before writing any JSON.
 2. Scan for consecutive duplicates — if found, swap one to a different layout type.
 3. Aim for at least 5–6 distinct layout types across a 10-slide deck.
@@ -247,16 +248,15 @@ Slide numbering must be shown only through the deck navigation status, for examp
 
 ## Icon Asset Library
 
-- Main icon library path: `./assets/viettel-icon-v2/icons/`
-- Library browser page: `./assets/viettel-icon-v2/viettel-icon-libarary.html`
-- Library docs: `./assets/viettel-icon-v2/README.md`
-- Legacy Codex icon pack: `./assets/viettel-icon-v2/codex-icons-v1/`
+- Main icon library path: `./assets/viettel-icon-v1/icons/`
+- Library browser page: `./assets/viettel-icon-v1/viettel-icon-library.html`
+- Library docs: `./assets/viettel-icon-v1/README.md`
 - Each icon is a standalone SVG with:
   - circular red/dark background
   - white foreground glyph
   - `viewBox="0 0 64 64"` for consistent scaling
 
-When generating `icon-text-grid`, always source icons from `./assets/viettel-icon-v2/icons/` first, then inline the selected file content into each `icon_svg` field.
+When generating `icon-text-grid`, always source icons from `./assets/viettel-icon-v1/icons/` first, then inline the selected file content into each `icon_svg` field.
 Do not hand-draw new inline SVGs unless the requested icon does not exist in the library.
 
 ### 11. highlight
