@@ -2,7 +2,12 @@
     {{#each items}}
     <div class="icon-box soft-panel">
         <div class="icon-wrapper">
+            {{#if icon_svg}}
             {{{icon_svg}}}
+            {{/if}}
+            {{#if icon_src}}
+            <img src="{{icon_src}}" alt="{{title}} icon" class="icon-image" />
+            {{/if}}
         </div>
         <h4 class="icon-title">{{title}}</h4>
         <p class="icon-copy">{{copy}}</p>

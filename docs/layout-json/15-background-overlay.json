@@ -1,0 +1,21 @@
+{
+  "layout": "background-overlay",
+  "title": "Overview",
+  "subtitle": "Trends and warnings",
+  "background_image_src": "./assets/city-night.jpg",
+  "background_image_alt": "Urban background",
+  "overlay_title": "Operational trends and warning signals",
+  "overlay_copy": "Use this layout for strategic narrative with market context.",
+  "focus_label": "FOCUS: Move from data to priority actions",
+  "insights": [
+    {
+      "title": "Increase in targeted fraud",
+      "copy": "Threat intelligence shows vertical-specific exploitation."
+    },
+    {
+      "title": "Implementation recommendation",
+      "copy": "Deploy fast-response playbooks and IOC tiering."
+    }
+  ],
+  "slide_mode": "16x9"
+}

@@ -1,0 +1,69 @@
+<section class="layout-chart-pie animate-fade-up">
+  <article class="cp-chart-panel">
+    <div class="cp-kicker">{{kicker}}</div>
+    {{#if chart_title}}
+    <h3 class="cp-title">{{chart_title}}</h3>
+    {{/if}}
+    <div class="cp-viz">
+      <div class="cp-donut-wrap">
+        <div class="cp-donut" data-cutout="{{cutout}}"></div>
+      </div>
+      <ul class="cp-legend">
+        {{#each slices}}
+        <li class="cp-legend-item" data-color="{{color}}" data-pct="{{pct}}">
+          <span class="cp-swatch" style="background: {{color}};"></span>
+          <span class="cp-label">{{label}}</span>
+          <span class="cp-value">{{value}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </article>
+
+  <aside class="cp-takeaway-panel">
+    {{#if takeaway_title}}
+    <h4 class="cp-takeaway-title">{{takeaway_title}}</h4>
+    {{/if}}
+    {{#if takeaway_summary}}
+    <p class="cp-takeaway-summary">{{takeaway_summary}}</p>
+    {{/if}}
+    <ul class="cp-takeaway-list">
+      {{#each takeaway_items}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    {{#if source}}
+    <p class="cp-source">{{source}}</p>
+    {{/if}}
+  </aside>
+</section>
+
+<script>
+  (function () {
+    const root = document.currentScript && document.currentScript.previousElementSibling
+      ? document.currentScript.previousElementSibling
+      : document.querySelector(".layout-chart-pie:last-of-type");
+    if (!root) return;
+
+    const donut = root.querySelector(".cp-donut");
+    const items = Array.from(root.querySelectorAll(".cp-legend-item"));
+    if (!donut || !items.length) return;
+
+    let start = 0;
+    const segments = [];
+    items.forEach((item) => {
+      const pct = Math.max(0, Math.min(100, parseFloat(item.dataset.pct || "0") || 0));
+      const color = item.dataset.color || "#111827";
+      const end = start + pct;
+      segments.push(`${color} ${start}% ${end}%`);
+      start = end;
+    });
+    if (start < 100) {
+      segments.push(`#e5e7eb ${start}% 100%`);
+    }
+    donut.style.background = `conic-gradient(${segments.join(", ")})`;
+
+    const cutout = donut.dataset.cutout || "62%";
+    donut.style.setProperty("--cp-cutout", cutout);
+  })();
+</script>

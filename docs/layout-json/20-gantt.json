@@ -1,0 +1,16 @@
+{
+  "layout": "gantt",
+  "title": "Q3 Security Program Rollout",
+  "subtitle": "12-week multi-workstream execution plan",
+  "kicker": "Plan · 2026 Roadmap",
+  "task_header": "Task",
+  "columns": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+  "rows": [
+    { "label": "Identity Baseline Hardening", "left": "0", "width": "25", "text": "Baseline complete" },
+    { "label": "IR Playbook Standardization", "left": "17", "width": "33", "text": "24 scenarios" },
+    { "label": "SOC Automation (SIEM/SOAR)", "left": "42", "width": "25", "text": "Auto triage" },
+    { "label": "Red/Blue Drill Program", "left": "58", "width": "25", "text": "2 simulation rounds" },
+    { "label": "Go-live and Handover", "left": "75", "width": "25", "text": "v1.0 release" }
+  ],
+  "slide_mode": "16x9"
+}

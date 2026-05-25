@@ -1,0 +1,7 @@
+{
+  "layout": "text-only",
+  "eyebrow": "Note",
+  "title": "Announcement",
+  "copy": "Short summary",
+  "html_content": "<p>Detailed <b>HTML</b> content goes here.</p><ul><li>List item</li></ul>"
+}

@@ -1,0 +1,7 @@
+{
+  "layout": "comparison",
+  "side_1_title": "Before",
+  "side_1_items": ["Old process", "Manual entry"],
+  "side_2_title": "After",
+  "side_2_items": ["Automated system", "Real-time sync"]
+}

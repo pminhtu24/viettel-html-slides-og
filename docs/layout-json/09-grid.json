@@ -1,0 +1,9 @@
+{
+  "layout": "grid",
+  "columns": 2,
+  "rows": 2,
+  "items": [
+    { "image_src": "img1.png", "title": "Item 1", "copy": "Desc 1" },
+    { "title": "Item 2 (No image)", "copy": "Desc 2" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "layout": "chart-pie",
+  "title": "Time Allocation Review",
+  "subtitle": "How effort was distributed this sprint",
+  "kicker": "Chart - Donut",
+  "chart_title": "Where Time Was Spent",
+  "cutout": "62%",
+  "slices": [
+    { "label": "Content Writing", "value": "55%", "pct": "55", "color": "#0b1021" },
+    { "label": "Layout Selection", "value": "18%", "pct": "18", "color": "#3d4053" },
+    { "label": "Style Tuning", "value": "14%", "pct": "14", "color": "#747784" },
+    { "label": "Image Production", "value": "8%", "pct": "8", "color": "#10b981" },
+    { "label": "Animation", "value": "5%", "pct": "5", "color": "#d18b00" }
+  ],
+  "takeaway_title": "Takeaways",
+  "takeaway_summary": "Most effort went to content and structure, while animation remained a small portion of total production time.",
+  "takeaway_items": [
+    "Content writing dominated workload at 55%.",
+    "Layout and styling together took 32%, indicating reuse opportunities.",
+    "Animation stayed lightweight at 5%, suitable for template-based motion."
+  ],
+  "source": "Source: Internal delivery tracking - Sprint 21/2026",
+  "slide_mode": "16x9"
+}

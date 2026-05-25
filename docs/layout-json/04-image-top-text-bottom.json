@@ -1,0 +1,6 @@
+{
+  "layout": "image-top-text-bottom",
+  "image_src": "./assets/img.png",
+  "title": "Section Title",
+  "copy": "Detailed explanation text below the image."
+}

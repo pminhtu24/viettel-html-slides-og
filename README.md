@@ -11,7 +11,7 @@ This skill contains a small Python generator, reusable HTML layout templates, Vi
 - Copies the `assets/` folder next to generated output.
 - Supports free-scrolling pages and locked `16x9` slide mode.
 - Adds image readability metadata for wide, ultra-wide, and tall local images.
-- Supports 17 reusable layouts.
+- Supports 20 reusable layouts.
 
 ## Structure
 
@@ -125,8 +125,11 @@ Supported layouts:
 - `agenda`
 - `chart-analysis`
 - `bar-insight`
+- `chart-pie`
+- `gantt`
 - `background-overlay`
 - `appendix-technical`
+- `kpi-grid`
 
 ## Layout Examples
 
@@ -176,7 +179,7 @@ Supported layouts:
 ```json
 {
   "title": "Delivery Roadmap",
-  "layout": "timeline",
+  "layout": "timelinev2",
   "events": [
     {
       "date": "Q1 2026",
@@ -197,7 +200,7 @@ Supported layouts:
 - Use the bundled real Viettel logo: `assets/viettel-logo.png`.
 - Do not recreate the logo with text, CSS, SVG, initials, or placeholders.
 - Keep the logo markup in `template.html` unless a replacement brand asset is explicitly provided.
-- Keep slide and page backgrounds plain white.
+- Keep slide and page backgrounds plain white by default, except `background-overlay`.
 - Use `assets/slide-viettel-theme.css` as the canonical theme file.
 
 ## Image Readability

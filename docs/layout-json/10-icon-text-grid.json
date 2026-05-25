@@ -1,0 +1,15 @@
+{
+  "layout": "icon-text-grid",
+  "items": [
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/speed.svg",
+      "title": "Speed",
+      "copy": "Extremely fast."
+    },
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/shield.svg",
+      "title": "Secure",
+      "copy": "End-to-end encryption."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "layout": "chart-analysis",
+  "title": "Regional Review",
+  "subtitle": "North America performance snapshot",
+  "metrics": [
+    { "label": "Underlying Revenue", "value": "$15,694M", "value_class": "v1" },
+    { "label": "Organic Revenue Growth", "value": "+7.7%", "value_class": "v2" }
+  ],
+  "chart_title": "Regional Mix by Vertical",
+  "chart_note": "Snapshot Q2/2026",
+  "bars": [
+    {
+      "value": "32%",
+      "pct": "86",
+      "color": "#ff5a1f",
+      "icon_src": "./assets/viettel-icon-v1/icons/briefcase.svg",
+      "icon_alt": "Business icon",
+      "label": "Business and Industry"
+    }
+  ],
+  "slide_mode": "16x9"
+}

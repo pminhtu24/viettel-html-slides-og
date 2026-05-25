@@ -1,0 +1,15 @@
+{
+  "layout": "timeline",
+  "events": [
+    {
+      "date": "Q1 2026",
+      "title": "Planning",
+      "copy": "Defined scope and goals."
+    },
+    {
+      "date": "Q2 2026",
+      "title": "Alpha",
+      "copy": "Initial prototype release."
+    }
+  ]
+}

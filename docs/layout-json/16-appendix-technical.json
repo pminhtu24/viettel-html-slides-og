@@ -1,0 +1,37 @@
+{
+  "layout": "appendix-technical",
+  "title": "Appendix",
+  "subtitle": "Technical details",
+  "appendix_eyebrow": "Technical Appendix APT TA-SC-33",
+  "overview_title": "1. Campaign overview",
+  "overview_copy": "TA-SC-33 uses spear-phishing and dynamic C2 for data collection.",
+  "overview_bullets": [
+    "Impact scope: VN, Laos, Thailand",
+    "New IOC cadence: 2-3 batches/day"
+  ],
+  "recommendations_title": "2. Response recommendations",
+  "recommendation_bullets": [
+    "Monitor unusual DNS patterns",
+    "Sandbox macro documents before opening"
+  ],
+  "tags": ["SOC", "Threat Intel", "CSIRT"],
+  "attack_flow_title": "Primary attack chain",
+  "attack_steps": [
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/mail.svg",
+      "icon_alt": "Mail icon",
+      "title": "Spear Phishing"
+    },
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/network.svg",
+      "icon_alt": "Network icon",
+      "title": "C2 Server"
+    }
+  ],
+  "signals_title": "3. Quick detection signals",
+  "quick_signals": [
+    "Domain age < 72h with abnormal traffic growth",
+    "Background PowerShell spawned from Office macro"
+  ],
+  "slide_mode": "16x9"
+}

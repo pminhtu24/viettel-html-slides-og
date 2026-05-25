@@ -1,0 +1,8 @@
+{
+  "layout": "image-text-split",
+  "image_src": "./assets/img.png",
+  "eyebrow": "Label",
+  "title": "Main Heading",
+  "copy": "Primary description",
+  "additional_text": "Supporting details"
+}

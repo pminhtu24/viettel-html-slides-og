@@ -1,0 +1,24 @@
+<section class="layout-bar-insight layout-gantt-vt animate-fade-up">
+  {{#if kicker}}
+  <p class="gantt-kicker">{{kicker}}</p>
+  {{/if}}
+  <h2 class="gantt-title">{{title}}</h2>
+
+  <div class="vt-gantt-board">
+    <div class="vt-gantt-head">
+      <div>{{task_header}}</div>
+      {{#each columns}}
+      <div>{{this}}</div>
+      {{/each}}
+    </div>
+
+    {{#each rows}}
+    <div class="vt-gantt-row">
+      <div class="vt-gantt-label">{{label}}</div>
+      <div class="vt-gantt-cells">
+        <div class="vt-gantt-bar" style="left: {{left}}%; width: {{width}}%;">{{text}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>

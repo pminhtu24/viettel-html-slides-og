@@ -1,0 +1,8 @@
+{
+  "layout": "data-table",
+  "headers": ["Metric", "Value", "Status"],
+  "rows": [
+    ["Speed", "100ms", "OK"],
+    ["Cost", "$1.2", "High"]
+  ]
+}

@@ -1,0 +1,27 @@
+<section class="layout-kpi-grid animate-fade-up">
+  <div class="kg-grid">
+    {{#each kpis}}
+    <article class="kg-card soft-panel">
+      <div class="kg-top">
+        {{#if icon_src}}
+        <span class="kg-icon"><img src="{{icon_src}}" alt="{{icon_alt}}"></span>
+        {{/if}}
+        {{#if icon_svg}}
+        <span class="kg-icon">{{{icon_svg}}}</span>
+        {{/if}}
+        <p class="kg-label">{{label}}</p>
+      </div>
+
+      <p class="kg-value">{{value}}<span class="kg-unit">{{unit}}</span></p>
+
+      {{#if trend}}
+      <p class="kg-trend {{trend_tone}}">{{trend}}</p>
+      {{/if}}
+
+      {{#if footnote}}
+      <p class="kg-footnote">{{footnote}}</p>
+      {{/if}}
+    </article>
+    {{/each}}
+  </div>
+</section>

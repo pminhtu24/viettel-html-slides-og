@@ -1,0 +1,7 @@
+{
+  "layout": "two-horizontal-images",
+  "image_1_src": "./assets/img1.png",
+  "image_1_alt": "Alt 1",
+  "image_2_src": "./assets/img2.png",
+  "image_2_alt": "Alt 2"
+}

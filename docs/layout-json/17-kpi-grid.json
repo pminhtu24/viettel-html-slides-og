@@ -1,0 +1,44 @@
+{
+  "layout": "kpi-grid",
+  "title": "Quarterly KPI Snapshot",
+  "subtitle": "What we achieved in this quarter",
+  "kpis": [
+    {
+      "label": "Revenue",
+      "value": "1,248",
+      "unit": "K",
+      "trend": "↑ 38% YoY",
+      "trend_tone": "trend-good",
+      "icon_src": "./assets/viettel-icon-v1/icons/cost.svg",
+      "icon_alt": "Revenue"
+    },
+    {
+      "label": "Active Users",
+      "value": "82",
+      "unit": "K",
+      "trend": "↑ 12% QoQ",
+      "trend_tone": "trend-good",
+      "icon_src": "./assets/viettel-icon-v1/icons/people-group.svg",
+      "icon_alt": "Users"
+    },
+    {
+      "label": "Retention",
+      "value": "74",
+      "unit": "%",
+      "trend": "↑ 3 pts",
+      "trend_tone": "trend-good",
+      "icon_src": "./assets/viettel-icon-v1/icons/performance.svg",
+      "icon_alt": "Retention"
+    },
+    {
+      "label": "NPS",
+      "value": "61",
+      "unit": "",
+      "trend": "→ Stable",
+      "trend_tone": "trend-warn",
+      "icon_src": "./assets/viettel-icon-v1/icons/support.svg",
+      "icon_alt": "NPS"
+    }
+  ],
+  "slide_mode": "16x9"
+}

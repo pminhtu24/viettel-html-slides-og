@@ -1,0 +1,28 @@
+{
+  "layout": "bar-insight",
+  "title": "Security Operations Weekly Snapshot",
+  "subtitle": "Detection and response performance",
+  "summary_cards": [
+    { "label": "Alerts Processed", "value": "12,480", "tone": "" },
+    { "label": "Critical Incidents", "value": "34", "tone": "highlight" },
+    { "label": "MTTD", "value": "14 min", "tone": "" },
+    { "label": "MTTR", "value": "47 min", "tone": "" }
+  ],
+  "chart_title": "Incident Volume by Category",
+  "chart_note": "Week 21, 2026",
+  "bars": [
+    { "label": "Phishing", "value": "4,320", "pct": "86", "color": "#ff5a1f" },
+    { "label": "Malware", "value": "2,980", "pct": "59", "color": "#f97316" },
+    { "label": "DDoS", "value": "2,140", "pct": "43", "color": "#fb7185" },
+    { "label": "Credential Abuse", "value": "1,760", "pct": "35", "color": "#22c55e" },
+    { "label": "Data Exfiltration", "value": "1,280", "pct": "26", "color": "#0ea5e9" }
+  ],
+  "insight_title": "Key Insights",
+  "insight_items": [
+    "Phishing remains the largest source of SOC workload this week.",
+    "Critical incidents dropped 12% week-over-week after stricter mail filtering.",
+    "Response times improved due to updated triage playbooks and automation."
+  ],
+  "source": "Source: SOC Dashboard · 2026-05-21",
+  "slide_mode": "16x9"
+}
