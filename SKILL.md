@@ -269,7 +269,7 @@ All layout JSON examples are moved to:
 - `./docs/layout-json/05-data-table.json`
 - `./docs/layout-json/06-text-only.json`
 - `./docs/layout-json/07-comparison.json`
-- `./docs/layout-json/08-timeline.json`
+- `./docs/layout-json/08-timeline-v2.json`
 - `./docs/layout-json/09-grid.json`
 - `./docs/layout-json/10-icon-text-grid.json`
 - `./docs/layout-json/11-highlight.json`

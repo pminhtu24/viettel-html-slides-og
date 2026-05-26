@@ -321,6 +321,10 @@ def generate_slide(data_path, master_template_path, output_path):
             master_html = f.read()
 
         layout_name = data.get("layout", "text-only")
+        # Backward compatibility: legacy "timeline" now uses timelinev2 template.
+        if layout_name == "timeline":
+            layout_name = "timelinev2"
+            data["layout"] = "timelinev2"
         show_header = data.get("show_header")
         if show_header is None:
             show_header = layout_name not in {"agenda"}
