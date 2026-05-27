@@ -1,5 +1,5 @@
 ---
-name: viettel-html-slide
+name: viettel-html-slides
 description: Generate Viettel-branded HTML slides from JSON with 21 modular layouts and offline assets.
 ---
 
@@ -65,6 +65,7 @@ description: Generate Viettel-branded HTML slides from JSON with 21 modular layo
 
 Use these references for detailed rules; keep this file as the quick operational entrypoint.
 Before any layout selection or JSON authoring, agent must read:
+
 - `./docs/guide/layout-selection.md`
 - `./docs/guide/media-and-icons.md`
 

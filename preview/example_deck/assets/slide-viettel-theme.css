@@ -2152,6 +2152,73 @@ body {
   font-size: clamp(1.26rem, 2.25vw, 1.8rem);
 }
 
+/* Gantt: shrink header/title by 40%, move layout up, and prevent label overlap */
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .slide-title,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .slide-title {
+  font-size: clamp(2.43rem, 4.14vw, 3.24rem);
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .slide-subtitle,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .slide-subtitle {
+  font-size: clamp(1.26rem, 2.25vw, 1.8rem);
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .slide-header,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .slide-header {
+  margin-bottom: 0.65rem;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .slide-main,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .slide-main {
+  min-height: calc(100vh - 180px);
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .slide-main > .layout-gantt-vt,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .slide-main > .layout-gantt-vt {
+  margin-top: -0.8rem;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-board,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-board {
+  margin-top: 0.9rem;
+  padding-bottom: 1.35rem;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-head,
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-row,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-head,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-row {
+  grid-template-columns: 330px repeat(12, minmax(0, 1fr));
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-row,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-row {
+  min-height: 4.2rem;
+  height: auto;
+  align-items: stretch;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-label,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-label {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  padding: 0.4rem 0.8rem 0.4rem 0;
+  white-space: normal;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-cells,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-cells {
+  height: 100%;
+  min-height: 2.55rem;
+}
+
+.slide-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-bar,
+.mode-16x9 .slide-content:has(.layout-gantt-vt) .layout-gantt-vt .vt-gantt-bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 /* Layout-scoped header downscale: icon-text-grid + section-divider (-20%) */
 .slide-16x9 .slide-content:has(.layout-icon-text-grid) .slide-title,

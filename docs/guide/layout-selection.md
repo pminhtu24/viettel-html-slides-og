@@ -20,7 +20,7 @@ Primary rule: **message fit first, variety second**.
 | `gantt`                 | Multi-workstream timeline across weeks/months       | Single KPI snapshot or category share-only message         |
 | `kpi-grid`              | KPI snapshot with 3-6 peer metrics for fast scan    | Deep segment drill-down or long time-series trend analysis |
 | `bar-insight`           | Quarterly KPI bars + executive quick-read panel     | High-cardinality data needing full table detail            |
-| `org-hierarchy`         | Organization/team hierarchy with reporting lines     | Deep KPI trend analysis or process timeline                |
+| `org-hierarchy`         | Organization/team hierarchy with reporting lines    | Deep KPI trend analysis or process timeline                |
 | `background-overlay`    | Need high-impact visual atmosphere behind insights  | Dense tables or long text-heavy explanations               |
 | `appendix-technical`    | Technical appendix, IOC flow, deep-dive checklist   | High-level intro or executive summary                      |
 | `grid`                  | 2x2 or 3x3 visual cards, portfolio snapshots        | No useful images; strict sequence needed                   |
@@ -34,12 +34,27 @@ Primary rule: **message fit first, variety second**.
 - 6-12 slides: aim for 4-6 layout types.
 - 13+ slides: aim for 6+ layout types.
 - Do not overuse `icon-text-grid`, `data-table` (normally max 2 per 10 slides).
+- `icon-text-grid` cannot be used on consecutive slides.
 - `section-divider` has no hard cap; use it whenever a real section boundary improves structure.
 - Repetition is allowed if it improves comprehension.
+
+## Avoid (required)
+
+- Do not place `icon-text-grid` on two consecutive slides.
+- Do not repeat any same layout for more than two consecutive slides.
+- Do not use `bar-insight` when numeric range is too tight to separate bars clearly.
+- Do not use `text-only` when a source visual provides stronger evidence.
+- Do not ship low-contrast text/icons against background.
+- Do not allow overflow/clipping in `slide_mode: "16x9"`.
+- Do not leave placeholders (`lorem`, `xxxx`, `TBD`).
+- Do not overload a single `data-table`; split if scan speed drops.
+- Do not force image-heavy layouts when image inventory is insufficient.
+- Do not keep random backgrounds if readability is degraded.
 
 ## Repetition Rule (Soft)
 
 - Default: avoid consecutive identical layouts.
+- Hard override: `icon-text-grid` cannot appear consecutively.
 - Exception: allow when continuity/readability is stronger (for example, phased timeline).
 - If repeating, change at least one of: content density, visual emphasis, interaction pattern.
 
@@ -83,17 +98,6 @@ Primary rule: **message fit first, variety second**.
 4. Verify variety target for deck length.
 5. Final pass: do not choose a layout only for variety if it hurts clarity.
 
-## Avoid
-
-- Do not repeat the same layout for more than two consecutive slides.
-- Do not use `text-only` when a source visual provides stronger evidence.
-- Do not ship low-contrast text/icons against background.
-- Do not allow overflow/clipping in `slide_mode: "16x9"`.
-- Do not leave placeholders (`lorem`, `xxxx`, `TBD`).
-- Do not overload a single `data-table`; split if scan speed drops.
-- Do not force image-heavy layouts when image inventory is insufficient.
-- Do not keep random backgrounds if readability is degraded.
-
 ## Layout Options by Message Type
 
 - Sequence/process flow: `timeline`; fallback `agenda` for meeting/program format.
@@ -108,6 +112,7 @@ Primary rule: **message fit first, variety second**.
 ## Data Display Rules
 
 - Keep one primary numeric message per slide.
+- For `bar-insight`, require readable separation. If `(max - min) / max < 0.15`, switch to another numeric layout (`kpi-grid`, `data-table`, or `text-only` with numeric callouts).
 - For `16:9`, keep tables compact (typically up to 6 rows x 5 columns per table).
 - For `kpi-grid`, keep 3-6 KPIs per slide; split if more.
 - For `chart-pie`, keep categories concise (typically 3-7 slices).

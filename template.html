@@ -107,10 +107,11 @@
     const grids = document.querySelectorAll(".layout-icon-text-grid");
     grids.forEach((grid) => {
       const count = grid.querySelectorAll(".icon-box").length;
-      grid.classList.remove("icon-grid-3", "icon-grid-4", "icon-grid-5");
+      grid.classList.remove("icon-grid-3", "icon-grid-4", "icon-grid-5", "icon-grid-6-plus");
       if (count === 3) grid.classList.add("icon-grid-3");
       if (count === 4) grid.classList.add("icon-grid-4");
       if (count === 5) grid.classList.add("icon-grid-5");
+      if (count >= 6) grid.classList.add("icon-grid-6-plus");
     });
   }
 
