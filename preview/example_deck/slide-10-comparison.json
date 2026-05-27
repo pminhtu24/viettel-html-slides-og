@@ -1,0 +1,20 @@
+{
+  "layout": "comparison",
+  "title": "So sánh 2 xu hướng mã độc nổi bật",
+  "subtitle": "Ransomware gây gián đoạn mạnh vs Stealer đánh cắp dữ liệu nhanh",
+  "side_1_title": "Ransomware",
+  "side_1_items": [
+    "Phổ biến mô hình double extortion",
+    "Lan rộng Ransomware-as-a-Service",
+    "Kỹ thuật mới: ClickFix, BYOI",
+    "Nhắm nhiều vào tài chính, viễn thông, dịch vụ công"
+  ],
+  "side_2_title": "Stealer",
+  "side_2_items": [
+    "Bùng nổ mô hình thương mại hóa dữ liệu",
+    "Ưu tiên cookie, session, mật khẩu, ví số",
+    "Ẩn lưu lượng qua HTTPS/cloud để né phát hiện",
+    "Làm đầu vào cho phishing và chiếm quyền truy cập"
+  ],
+  "slide_mode": "16x9"
+}

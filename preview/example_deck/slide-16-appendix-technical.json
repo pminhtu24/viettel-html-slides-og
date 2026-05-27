@@ -1,0 +1,50 @@
+{
+  "layout": "appendix-technical",
+  "title": "Phụ lục kỹ thuật",
+  "subtitle": "APT TA-SC-33 tại khu vực APAC",
+  "appendix_eyebrow": "Tóm tắt phân tích từ phụ lục 1",
+  "overview_title": "1) Tổng quan chiến dịch",
+  "overview_copy": "TA-SC-33 nhắm hạ tầng trọng yếu, sử dụng hạ tầng C2 ẩn danh và kỹ thuật né tránh phân tích.",
+  "overview_bullets": [
+    "Nạn nhân chính: Dịch vụ công, Công nghệ - Viễn thông, Năng lượng.",
+    "Kỹ thuật nổi bật: GrimResource, DLL sideloading, reflective loading.",
+    "Khai thác tài khoản VPN lộ lọt và công cụ quản trị hợp pháp để di chuyển ngang."
+  ],
+  "recommendations_title": "2) Ưu tiên ứng phó",
+  "recommendation_bullets": [
+    "Bắt buộc MFA cho AD, VPN và nền tảng quản trị tập trung.",
+    "Theo dõi domain mới đăng ký, hành vi WinRM bất thường, sideload DLL.",
+    "Đẩy IOC/TTP vào SIEM/SOC và duy trì threat hunting định kỳ."
+  ],
+  "tags": ["SOC", "Threat Hunting", "EDR", "MFA"],
+  "attack_flow_title": "Chuỗi tấn công điển hình",
+  "attack_steps": [
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/mail.svg",
+      "icon_alt": "Phishing",
+      "title": "Spear phishing"
+    },
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/key.svg",
+      "icon_alt": "Credential",
+      "title": "Lạm dụng tài khoản"
+    },
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/network.svg",
+      "icon_alt": "Lateral movement",
+      "title": "Di chuyển ngang"
+    },
+    {
+      "icon_src": "./assets/viettel-icon-v1/icons/database.svg",
+      "icon_alt": "Exfiltration",
+      "title": "Trích xuất dữ liệu"
+    }
+  ],
+  "signals_title": "3) Dấu hiệu cần giám sát nhanh",
+  "quick_signals": [
+    "Đăng nhập AD/SQL/EDR ngoài giờ từ thiết bị lạ.",
+    "Kết nối đến domain mới có nameserver Cloudflare.",
+    "PowerShell từ xa, dump credential hoặc tiến trình sideload bất thường."
+  ],
+  "slide_mode": "16x9"
+}

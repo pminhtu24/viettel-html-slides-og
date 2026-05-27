@@ -1,0 +1,24 @@
+{
+  "layout": "chart-pie",
+  "title": "Nguồn lộ lọt do đăng tải công khai",
+  "subtitle": "Tỷ lệ theo nền tảng chia sẻ tài liệu/mã nguồn",
+  "kicker": "Phân tích nguồn sự cố",
+  "chart_title": "Tỷ trọng theo nền tảng",
+  "cutout": "87%",
+  "slices": [
+    { "label": "GitHub", "value": "87%", "pct": "87", "color": "#EE0033" },
+    { "label": "Scribd", "value": "6%", "pct": "6", "color": "#FF6B35" },
+    { "label": "Postman", "value": "5%", "pct": "5", "color": "#F59E0B" },
+    { "label": "GitLab", "value": "1%", "pct": "1", "color": "#10B981" },
+    { "label": "VirusTotal", "value": "1%", "pct": "1", "color": "#3B82F6" }
+  ],
+  "takeaway_title": "Hàm ý kiểm soát",
+  "takeaway_summary": "Lỗi vận hành và chia sẻ công khai nội bộ là tác nhân chi phối trong nhóm sự cố này.",
+  "takeaway_items": [
+    "Thiết lập chính sách pre-commit scan cho secret/API key.",
+    "Giới hạn public repository và quy trình duyệt publish tài liệu.",
+    "Bật cảnh báo real-time khi phát hiện dữ liệu nhạy cảm bị công khai."
+  ],
+  "source": "Trang 12-13 · Viettel Threat Intelligence",
+  "slide_mode": "16x9"
+}

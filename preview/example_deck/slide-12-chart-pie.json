@@ -1,0 +1,24 @@
+{
+  "layout": "chart-pie",
+  "title": "Phân bố lừa đảo, giả mạo theo ngành",
+  "subtitle": "Tỷ lệ ghi nhận trong quý 3/2025",
+  "kicker": "Lĩnh vực chịu rủi ro",
+  "chart_title": "Cơ cấu theo ngành",
+  "cutout": "37%",
+  "slices": [
+    { "label": "Tài chính - Ngân hàng", "value": "37%", "pct": "37", "color": "#0b1021" },
+    { "label": "Cơ quan chức năng", "value": "23%", "pct": "23", "color": "#3d4053" },
+    { "label": "Bán lẻ - TMĐT", "value": "15%", "pct": "15", "color": "#747784" },
+    { "label": "Hạ tầng thiết yếu", "value": "14%", "pct": "14", "color": "#10b981" },
+    { "label": "Lĩnh vực khác", "value": "11%", "pct": "11", "color": "#d18b00" }
+  ],
+  "takeaway_title": "Ưu tiên phòng thủ",
+  "takeaway_summary": "Nhóm ngành có giao dịch tài chính và thương hiệu đại chúng đang chịu áp lực cao nhất.",
+  "takeaway_items": [
+    "Siết bảo vệ kênh giao tiếp khách hàng và cổng thanh toán.",
+    "Triển khai quy trình phản ứng nhanh với domain/app giả mạo.",
+    "Nâng nhận thức người dùng trước các kịch bản AI social engineering."
+  ],
+  "source": "Trang 18 · Viettel Threat Intelligence",
+  "slide_mode": "16x9"
+}

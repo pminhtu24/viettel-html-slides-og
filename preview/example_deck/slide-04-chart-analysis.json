@@ -1,0 +1,56 @@
+{
+  "layout": "chart-analysis",
+  "title": "5 chỉ số rủi ro cần ưu tiên theo dõi",
+  "subtitle": "Tổng hợp xu hướng chính của quý 3/2025",
+  "metrics": [
+    { "label": "Vụ lộ lọt dữ liệu", "value": "221 vụ", "value_class": "v1" },
+    { "label": "Bản ghi dữ liệu bị rò rỉ", "value": "502+ triệu", "value_class": "v2" },
+    { "label": "Tên miền lừa đảo", "value": "3,978", "value_class": "v3" },
+    { "label": "Lỗ hổng ảnh hưởng cao", "value": "27", "value_class": "v4" }
+  ],
+  "chart_title": "Mức tăng so với giai đoạn trước",
+  "chart_note": "Chuẩn hóa theo mức tăng cao nhất trong quý",
+  "bars": [
+    {
+      "value": "+207%",
+      "pct": "100",
+      "color": "#ef4444",
+      "icon_src": "./assets/viettel-icon-v1/icons/warning.svg",
+      "icon_alt": "DDoS growth",
+      "label": "DDoS (YoY)"
+    },
+    {
+      "value": "x3.2",
+      "pct": "89",
+      "color": "#f97316",
+      "icon_src": "./assets/viettel-icon-v1/icons/globe.svg",
+      "icon_alt": "Phishing domains",
+      "label": "Tên miền lừa đảo"
+    },
+    {
+      "value": "x2.6",
+      "pct": "73",
+      "color": "#fb7185",
+      "icon_src": "./assets/viettel-icon-v1/icons/copy-file.svg",
+      "icon_alt": "Spoofing sites",
+      "label": "Trang giả mạo"
+    },
+    {
+      "value": "+82%",
+      "pct": "40",
+      "color": "#22c55e",
+      "icon_src": "./assets/viettel-icon-v1/icons/shield.svg",
+      "icon_alt": "Vulnerabilities",
+      "label": "Lỗ hổng mới toàn cầu"
+    },
+    {
+      "value": "+64%",
+      "pct": "31",
+      "color": "#0ea5e9",
+      "icon_src": "./assets/viettel-icon-v1/icons/key.svg",
+      "icon_alt": "Credential leak",
+      "label": "Tài khoản lộ lọt tại VN"
+    }
+  ],
+  "slide_mode": "16x9"
+}

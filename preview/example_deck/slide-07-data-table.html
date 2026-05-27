@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các lĩnh vực bị lộ lọt dữ liệu nhiều nhất</title><link rel="stylesheet" href="./assets/slide-viettel-theme.css">
+</head>
+<body class="min-h-screen slide-16x9">
+    <div class="slide-shell tech-shell">
+        <div class="slide-content">
+            
+            <header class="slide-header animate-fade-left">
+                <h1 class="slide-title">Các lĩnh vực bị lộ lọt dữ liệu nhiều nhất</h1>
+                <p class="slide-subtitle">Thống kê đến hết quý 3 năm 2025</p>
+            </header>
+            
+
+            <main class="slide-main">
+                <div class="layout-data-table animate-fade-up">
+    <table class="vt-table">
+        <thead>
+            <tr>
+                
+                <th>Lĩnh vực</th>
+                
+                <th>Số vụ</th>
+                
+                <th>Tác động chính</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                
+                <td>Dịch vụ tiêu dùng - Cá nhân</td>
+                
+                <td>62</td>
+                
+                <td>177+ triệu bản ghi</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>Bán lẻ - Thương mại điện tử</td>
+                
+                <td>29</td>
+                
+                <td>~6.1 triệu bản ghi</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>Giáo dục - Edtech</td>
+                
+                <td>28</td>
+                
+                <td>~13 triệu bản ghi</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>Tài chính - Ngân hàng</td>
+                
+                <td>17</td>
+                
+                <td>195+ triệu bản ghi</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>Năng lượng - Hạ tầng thiết yếu</td>
+                
+                <td>14</td>
+                
+                <td>11.6+ triệu bản ghi, 70 GB</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>Dịch vụ công</td>
+                
+                <td>5</td>
+                
+                <td>23+ triệu bản ghi</td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+            </main>
+        </div>
+
+        <img src="./assets/viettel-logo.png" alt="Viettel logo" class="brand-logo">
+    </div>
+
+<script>
+  const iconFallbackByName = {
+    "cloud-upload.svg": "cloud.svg",
+    "copy-file.svg": "data-pipeline.svg",
+    "search.svg": "analytics.svg",
+    "calendar.svg": "uptime.svg",
+    "warning.svg": "security.svg",
+    "globe.svg": "platform.svg",
+    "key.svg": "security.svg",
+    "shield.svg": "security.svg",
+    "building.svg": "platform.svg",
+    "service.svg": "support.svg",
+    "cart.svg": "cost.svg",
+    "power.svg": "uptime.svg",
+    "grid-menu.svg": "integration.svg",
+    "check.svg": "compliance.svg",
+    "top-priority.svg": "strategy.svg",
+    "info.svg": "analytics.svg",
+    "arrow-up-right.svg": "performance.svg",
+    "upload-alt.svg": "data-pipeline.svg",
+    "no-access.svg": "security.svg"
+  };
+
+  function getIconFallbackName(src = "") {
+    const iconName = (src.split("/").pop() || "").split("?")[0];
+    return iconFallbackByName[iconName] || "security.svg";
+  }
+
+  function pickEmojiForIcon(src = "", alt = "") {
+    const text = `${src} ${alt}`.toLowerCase();
+    if (text.includes("shield") || text.includes("security") || text.includes("lock")) return "🛡️";
+    if (text.includes("cloud")) return "☁️";
+    if (text.includes("chart") || text.includes("analytics")) return "📊";
+    if (text.includes("database") || text.includes("data")) return "🗄️";
+    if (text.includes("network") || text.includes("globe") || text.includes("wifi")) return "🌐";
+    if (text.includes("team") || text.includes("users") || text.includes("people")) return "👥";
+    if (text.includes("settings") || text.includes("automation")) return "⚙️";
+    if (text.includes("warning") || text.includes("alert")) return "⚠️";
+    if (text.includes("support") || text.includes("service")) return "🛠️";
+    if (text.includes("versus")) return "⚔️";
+    return "🔴";
+  }
+
+  function replaceBrokenIconWithEmoji(img) {
+    if (!img || img.dataset.emojiFallbackApplied === "1") return;
+    const emoji = pickEmojiForIcon(img.getAttribute("src") || "", img.getAttribute("alt") || "");
+    const span = document.createElement("span");
+    span.className = "icon-emoji-fallback";
+    span.setAttribute("role", "img");
+    span.setAttribute("aria-label", (img.getAttribute("alt") || "icon") + " fallback");
+    span.textContent = emoji;
+    img.dataset.emojiFallbackApplied = "1";
+    img.replaceWith(span);
+  }
+
+  function applyIconEmojiFallback() {
+    const iconImages = document.querySelectorAll(
+      ".icon-wrapper img, .kg-icon img, .grid-icon img, .ca-icon img, .at-step-icon img, .comp-vs-icon img"
+    );
+
+    iconImages.forEach((img) => {
+      img.addEventListener("error", () => {
+        if (img.dataset.iconFallbackApplied !== "1") {
+          img.dataset.iconFallbackApplied = "1";
+          img.src = `./assets/viettel-icon-v1/icons/${getIconFallbackName(img.currentSrc || img.src || "")}`;
+          return;
+        }
+        replaceBrokenIconWithEmoji(img);
+      });
+      if (img.complete && img.naturalWidth === 0) {
+        if (img.dataset.iconFallbackApplied !== "1") {
+          img.dataset.iconFallbackApplied = "1";
+          img.src = `./assets/viettel-icon-v1/icons/${getIconFallbackName(img.currentSrc || img.src || "")}`;
+        } else {
+          replaceBrokenIconWithEmoji(img);
+        }
+      }
+    });
+  }
+
+  function applyIconGridDensity() {
+    const grids = document.querySelectorAll(".layout-icon-text-grid");
+    grids.forEach((grid) => {
+      const count = grid.querySelectorAll(".icon-box").length;
+      grid.classList.remove("icon-grid-3", "icon-grid-4", "icon-grid-5");
+      if (count === 3) grid.classList.add("icon-grid-3");
+      if (count === 4) grid.classList.add("icon-grid-4");
+      if (count === 5) grid.classList.add("icon-grid-5");
+    });
+  }
+
+  function fitLayoutHeight() {
+    const body = document.body;
+    const is16x9 = body.classList.contains("slide-16x9") || body.classList.contains("mode-16x9");
+    if (!is16x9) return;
+
+    const main = document.querySelector(".slide-main");
+    if (!main) return;
+
+    const targets = [
+      { selector: ".layout-text-only", minScale: 0.72 },
+      { selector: ".layout-timelinev2", minScale: 0.76 },
+      { selector: ".layout-chart-analysis", minScale: 0.64 },
+      { selector: ".layout-icon-text-grid", minScale: 0.66 },
+      { selector: ".layout-appendix-technical", minScale: 0.62 },
+      { selector: ".layout-grid", minScale: 0.68 },
+      { selector: ".layout-background-overlay", minScale: 0.7 },
+      { selector: ".layout-bar-insight", minScale: 0.68 },
+      { selector: ".layout-chart-pie", minScale: 0.68 },
+      { selector: ".layout-org-hierarchy", minScale: 0.72 }
+    ];
+
+    targets.forEach(({ selector, minScale }) => {
+      const layout = main.querySelector(selector);
+      if (!layout) return;
+      const textPanel = selector === ".layout-text-only" ? layout.querySelector(".text-only-content") : null;
+
+      layout.style.removeProperty("--layout-fit-scale");
+      layout.style.removeProperty("overflow");
+      layout.style.removeProperty("max-height");
+      layout.style.removeProperty("padding-right");
+      if (textPanel) {
+        textPanel.style.removeProperty("max-height");
+        textPanel.style.removeProperty("overflow");
+      }
+
+      const available = main.clientHeight;
+      if (!available) return;
+
+      let scale = 1;
+      let guard = 0;
+      while (layout.scrollHeight > available && scale > minScale && guard < 24) {
+        scale -= 0.03;
+        layout.style.setProperty("--layout-fit-scale", scale.toFixed(2));
+        guard += 1;
+      }
+
+      if (layout.scrollHeight > available) {
+        layout.style.overflow = "auto";
+        layout.style.maxHeight = `${available}px`;
+        layout.style.paddingRight = "0.5rem";
+
+        if (textPanel) {
+          const chromeHeight = layout.scrollHeight - textPanel.scrollHeight;
+          const panelHeight = Math.max(140, available - chromeHeight - 8);
+          textPanel.style.maxHeight = `${panelHeight}px`;
+          textPanel.style.overflow = "auto";
+        }
+      }
+    });
+  }
+
+  function runLayoutFit() {
+    applyIconEmojiFallback();
+    applyIconGridDensity();
+    fitLayoutHeight();
+    requestAnimationFrame(fitLayoutHeight);
+  }
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      window.parent.postMessage({
+        type: "deck-navigation",
+        direction: event.key === "ArrowLeft" ? "left" : "right"
+      }, "*");
+    }
+  });
+
+  window.addEventListener("load", runLayoutFit);
+  window.addEventListener("resize", runLayoutFit);
+  if (document.fonts && typeof document.fonts.ready?.then === "function") {
+    document.fonts.ready.then(runLayoutFit).catch(() => {});
+  }
+</script>
+
+</body>
+</html>

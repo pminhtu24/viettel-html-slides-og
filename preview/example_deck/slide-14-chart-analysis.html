@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bức tranh lỗ hổng bảo mật quý 3/2025</title><link rel="stylesheet" href="./assets/slide-viettel-theme.css">
+</head>
+<body class="min-h-screen slide-16x9">
+    <div class="slide-shell tech-shell">
+        <div class="slide-content">
+            
+            <header class="slide-header animate-fade-left">
+                <h1 class="slide-title">Bức tranh lỗ hổng bảo mật quý 3/2025</h1>
+                <p class="slide-subtitle">Khối lượng lỗ hổng mới và mức độ nghiêm trọng</p>
+            </header>
+            
+
+            <main class="slide-main">
+                <div class="layout-chart-analysis animate-fade-up">
+  <aside class="ca-metrics">
+    
+    <div class="ca-metric-row">
+      <p class="ca-label">Lỗ hổng mới toàn cầu</p>
+      <p class="ca-value v1">9,277</p>
+    </div>
+    
+    <div class="ca-metric-row">
+      <p class="ca-label">Tăng trưởng so với Q3/2024</p>
+      <p class="ca-value v2">+82%</p>
+    </div>
+    
+    <div class="ca-metric-row">
+      <p class="ca-label">Lỗ hổng phân tích trọng yếu</p>
+      <p class="ca-value v3">27</p>
+    </div>
+    
+    <div class="ca-metric-row">
+      <p class="ca-label">Nhóm Critical trong 27 lỗ hổng</p>
+      <p class="ca-value v4">3</p>
+    </div>
+    
+  </aside>
+
+  <section class="ca-chart-panel">
+    
+    <h3 class="ca-chart-title">Tỷ trọng theo mức độ</h3>
+    
+    
+    <p class="ca-chart-note">Theo CVSS 3.0 trong quý 3/2025</p>
+    
+
+    <div class="ca-bars">
+      
+      <div class="ca-bar-col">
+        <p class="ca-bar-value">17%</p>
+        <div class="ca-bar-track">
+          <div class="ca-bar" style="--pct: 43%; --bar-color: #ef4444;"></div>
+        </div>
+        <div class="ca-cat">
+          
+          <span class="ca-icon"><img src="./assets/viettel-icon-v1/icons/top-priority.svg" alt="Critical"></span>
+          
+          
+          <span class="ca-cat-label">Nghiêm trọng</span>
+        </div>
+      </div>
+      
+      <div class="ca-bar-col">
+        <p class="ca-bar-value">33%</p>
+        <div class="ca-bar-track">
+          <div class="ca-bar" style="--pct: 83%; --bar-color: #f97316;"></div>
+        </div>
+        <div class="ca-cat">
+          
+          <span class="ca-icon"><img src="./assets/viettel-icon-v1/icons/warning.svg" alt="High"></span>
+          
+          
+          <span class="ca-cat-label">Cao</span>
+        </div>
+      </div>
+      
+      <div class="ca-bar-col">
+        <p class="ca-bar-value">40%</p>
+        <div class="ca-bar-track">
+          <div class="ca-bar" style="--pct: 100%; --bar-color: #22c55e;"></div>
+        </div>
+        <div class="ca-cat">
+          
+          <span class="ca-icon"><img src="./assets/viettel-icon-v1/icons/info.svg" alt="Medium"></span>
+          
+          
+          <span class="ca-cat-label">Trung bình</span>
+        </div>
+      </div>
+      
+      <div class="ca-bar-col">
+        <p class="ca-bar-value">10%</p>
+        <div class="ca-bar-track">
+          <div class="ca-bar" style="--pct: 25%; --bar-color: #0ea5e9;"></div>
+        </div>
+        <div class="ca-cat">
+          
+          <span class="ca-icon"><img src="./assets/viettel-icon-v1/icons/check.svg" alt="Low"></span>
+          
+          
+          <span class="ca-cat-label">Thấp</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
+
+            </main>
+        </div>
+
+        <img src="./assets/viettel-logo.png" alt="Viettel logo" class="brand-logo">
+    </div>
+
+<script>
+  const iconFallbackByName = {
+    "cloud-upload.svg": "cloud.svg",
+    "copy-file.svg": "data-pipeline.svg",
+    "search.svg": "analytics.svg",
+    "calendar.svg": "uptime.svg",
+    "warning.svg": "security.svg",
+    "globe.svg": "platform.svg",
+    "key.svg": "security.svg",
+    "shield.svg": "security.svg",
+    "building.svg": "platform.svg",
+    "service.svg": "support.svg",
+    "cart.svg": "cost.svg",
+    "power.svg": "uptime.svg",
+    "grid-menu.svg": "integration.svg",
+    "check.svg": "compliance.svg",
+    "top-priority.svg": "strategy.svg",
+    "info.svg": "analytics.svg",
+    "arrow-up-right.svg": "performance.svg",
+    "upload-alt.svg": "data-pipeline.svg",
+    "no-access.svg": "security.svg"
+  };
+
+  function getIconFallbackName(src = "") {
+    const iconName = (src.split("/").pop() || "").split("?")[0];
+    return iconFallbackByName[iconName] || "security.svg";
+  }
+
+  function pickEmojiForIcon(src = "", alt = "") {
+    const text = `${src} ${alt}`.toLowerCase();
+    if (text.includes("shield") || text.includes("security") || text.includes("lock")) return "🛡️";
+    if (text.includes("cloud")) return "☁️";
+    if (text.includes("chart") || text.includes("analytics")) return "📊";
+    if (text.includes("database") || text.includes("data")) return "🗄️";
+    if (text.includes("network") || text.includes("globe") || text.includes("wifi")) return "🌐";
+    if (text.includes("team") || text.includes("users") || text.includes("people")) return "👥";
+    if (text.includes("settings") || text.includes("automation")) return "⚙️";
+    if (text.includes("warning") || text.includes("alert")) return "⚠️";
+    if (text.includes("support") || text.includes("service")) return "🛠️";
+    if (text.includes("versus")) return "⚔️";
+    return "🔴";
+  }
+
+  function replaceBrokenIconWithEmoji(img) {
+    if (!img || img.dataset.emojiFallbackApplied === "1") return;
+    const emoji = pickEmojiForIcon(img.getAttribute("src") || "", img.getAttribute("alt") || "");
+    const span = document.createElement("span");
+    span.className = "icon-emoji-fallback";
+    span.setAttribute("role", "img");
+    span.setAttribute("aria-label", (img.getAttribute("alt") || "icon") + " fallback");
+    span.textContent = emoji;
+    img.dataset.emojiFallbackApplied = "1";
+    img.replaceWith(span);
+  }
+
+  function applyIconEmojiFallback() {
+    const iconImages = document.querySelectorAll(
+      ".icon-wrapper img, .kg-icon img, .grid-icon img, .ca-icon img, .at-step-icon img, .comp-vs-icon img"
+    );
+
+    iconImages.forEach((img) => {
+      img.addEventListener("error", () => {
+        if (img.dataset.iconFallbackApplied !== "1") {
+          img.dataset.iconFallbackApplied = "1";
+          img.src = `./assets/viettel-icon-v1/icons/${getIconFallbackName(img.currentSrc || img.src || "")}`;
+          return;
+        }
+        replaceBrokenIconWithEmoji(img);
+      });
+      if (img.complete && img.naturalWidth === 0) {
+        if (img.dataset.iconFallbackApplied !== "1") {
+          img.dataset.iconFallbackApplied = "1";
+          img.src = `./assets/viettel-icon-v1/icons/${getIconFallbackName(img.currentSrc || img.src || "")}`;
+        } else {
+          replaceBrokenIconWithEmoji(img);
+        }
+      }
+    });
+  }
+
+  function applyIconGridDensity() {
+    const grids = document.querySelectorAll(".layout-icon-text-grid");
+    grids.forEach((grid) => {
+      const count = grid.querySelectorAll(".icon-box").length;
+      grid.classList.remove("icon-grid-3", "icon-grid-4", "icon-grid-5");
+      if (count === 3) grid.classList.add("icon-grid-3");
+      if (count === 4) grid.classList.add("icon-grid-4");
+      if (count === 5) grid.classList.add("icon-grid-5");
+    });
+  }
+
+  function fitLayoutHeight() {
+    const body = document.body;
+    const is16x9 = body.classList.contains("slide-16x9") || body.classList.contains("mode-16x9");
+    if (!is16x9) return;
+
+    const main = document.querySelector(".slide-main");
+    if (!main) return;
+
+    const targets = [
+      { selector: ".layout-text-only", minScale: 0.72 },
+      { selector: ".layout-timelinev2", minScale: 0.76 },
+      { selector: ".layout-chart-analysis", minScale: 0.64 },
+      { selector: ".layout-icon-text-grid", minScale: 0.66 },
+      { selector: ".layout-appendix-technical", minScale: 0.62 },
+      { selector: ".layout-grid", minScale: 0.68 },
+      { selector: ".layout-background-overlay", minScale: 0.7 },
+      { selector: ".layout-bar-insight", minScale: 0.68 },
+      { selector: ".layout-chart-pie", minScale: 0.68 },
+      { selector: ".layout-org-hierarchy", minScale: 0.72 }
+    ];
+
+    targets.forEach(({ selector, minScale }) => {
+      const layout = main.querySelector(selector);
+      if (!layout) return;
+      const textPanel = selector === ".layout-text-only" ? layout.querySelector(".text-only-content") : null;
+
+      layout.style.removeProperty("--layout-fit-scale");
+      layout.style.removeProperty("overflow");
+      layout.style.removeProperty("max-height");
+      layout.style.removeProperty("padding-right");
+      if (textPanel) {
+        textPanel.style.removeProperty("max-height");
+        textPanel.style.removeProperty("overflow");
+      }
+
+      const available = main.clientHeight;
+      if (!available) return;
+
+      let scale = 1;
+      let guard = 0;
+      while (layout.scrollHeight > available && scale > minScale && guard < 24) {
+        scale -= 0.03;
+        layout.style.setProperty("--layout-fit-scale", scale.toFixed(2));
+        guard += 1;
+      }
+
+      if (layout.scrollHeight > available) {
+        layout.style.overflow = "auto";
+        layout.style.maxHeight = `${available}px`;
+        layout.style.paddingRight = "0.5rem";
+
+        if (textPanel) {
+          const chromeHeight = layout.scrollHeight - textPanel.scrollHeight;
+          const panelHeight = Math.max(140, available - chromeHeight - 8);
+          textPanel.style.maxHeight = `${panelHeight}px`;
+          textPanel.style.overflow = "auto";
+        }
+      }
+    });
+  }
+
+  function runLayoutFit() {
+    applyIconEmojiFallback();
+    applyIconGridDensity();
+    fitLayoutHeight();
+    requestAnimationFrame(fitLayoutHeight);
+  }
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      window.parent.postMessage({
+        type: "deck-navigation",
+        direction: event.key === "ArrowLeft" ? "left" : "right"
+      }, "*");
+    }
+  });
+
+  window.addEventListener("load", runLayoutFit);
+  window.addEventListener("resize", runLayoutFit);
+  if (document.fonts && typeof document.fonts.ready?.then === "function") {
+    document.fonts.ready.then(runLayoutFit).catch(() => {});
+  }
+</script>
+
+</body>
+</html>

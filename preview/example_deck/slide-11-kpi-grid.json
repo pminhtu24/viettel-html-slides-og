@@ -1,0 +1,44 @@
+{
+  "layout": "kpi-grid",
+  "title": "KPI lừa đảo và giả mạo trong quý 3/2025",
+  "subtitle": "Mặt trận tấn công trực tiếp người dùng và thương hiệu",
+  "kpis": [
+    {
+      "label": "Tên miền lừa đảo",
+      "value": "3,978",
+      "unit": "",
+      "trend": "↑ 3.2x YoY",
+      "trend_tone": "trend-bad",
+      "icon_src": "./assets/viettel-icon-v1/icons/warning.svg",
+      "icon_alt": "Phishing domains"
+    },
+    {
+      "label": "Trang giả mạo",
+      "value": "877",
+      "unit": "",
+      "trend": "↑ 2.6x YoY",
+      "trend_tone": "trend-bad",
+      "icon_src": "./assets/viettel-icon-v1/icons/globe.svg",
+      "icon_alt": "Spoofing pages"
+    },
+    {
+      "label": "Ngành bị nhắm cao nhất",
+      "value": "37",
+      "unit": "%",
+      "trend": "Tài chính - Ngân hàng",
+      "trend_tone": "trend-warn",
+      "icon_src": "./assets/viettel-icon-v1/icons/bank.svg",
+      "icon_alt": "Finance sector"
+    },
+    {
+      "label": "Hình thức mới",
+      "value": "AI",
+      "unit": "",
+      "trend": "Deepfake/Deepvoice tăng",
+      "trend_tone": "trend-warn",
+      "icon_src": "./assets/viettel-icon-v1/icons/automation.svg",
+      "icon_alt": "AI-enabled scam"
+    }
+  ],
+  "slide_mode": "16x9"
+}

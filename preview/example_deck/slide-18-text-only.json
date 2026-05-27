@@ -1,0 +1,9 @@
+{
+  "layout": "text-only",
+  "title": "Kết luận điều hành",
+  "subtitle": "Ưu tiên hành động trong 90 ngày tới",
+  "eyebrow": "Executive summary",
+  "copy": "Rủi ro ATTT Q3/2025 tăng mạnh trên cả 4 mặt trận: dữ liệu, lừa đảo, lỗ hổng và DDoS.",
+  "html_content": "<p><b>Ba ưu tiên cấp bách:</b></p><ul><li>Ưu tiên bảo vệ danh tính và tài khoản đặc quyền (MFA, PAM/PIM, kiểm soát truy cập tối thiểu).</li><li>Rút ngắn thời gian vá lỗ hổng Internet-facing và hệ thống đã EOL.</li><li>Tăng năng lực phát hiện sớm: SOC 24/7, IOC/TTP cập nhật liên tục, diễn tập theo kịch bản thực tế.</li></ul><p><b>Thông điệp:</b> Không chỉ tăng quy mô tấn công, đối tượng tấn công đang chuyển sang chiến thuật có chủ đích và phối hợp đa kỹ thuật. Doanh nghiệp cần chuyển từ phòng thủ phản ứng sang phòng thủ chủ động theo rủi ro.</p>",
+  "slide_mode": "16x9"
+}

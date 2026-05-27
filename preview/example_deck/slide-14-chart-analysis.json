@@ -1,0 +1,48 @@
+{
+  "layout": "chart-analysis",
+  "title": "Bức tranh lỗ hổng bảo mật quý 3/2025",
+  "subtitle": "Khối lượng lỗ hổng mới và mức độ nghiêm trọng",
+  "metrics": [
+    { "label": "Lỗ hổng mới toàn cầu", "value": "9,277", "value_class": "v1" },
+    { "label": "Tăng trưởng so với Q3/2024", "value": "+82%", "value_class": "v2" },
+    { "label": "Lỗ hổng phân tích trọng yếu", "value": "27", "value_class": "v3" },
+    { "label": "Nhóm Critical trong 27 lỗ hổng", "value": "3", "value_class": "v4" }
+  ],
+  "chart_title": "Tỷ trọng theo mức độ",
+  "chart_note": "Theo CVSS 3.0 trong quý 3/2025",
+  "bars": [
+    {
+      "value": "17%",
+      "pct": "43",
+      "color": "#ef4444",
+      "icon_src": "./assets/viettel-icon-v1/icons/top-priority.svg",
+      "icon_alt": "Critical",
+      "label": "Nghiêm trọng"
+    },
+    {
+      "value": "33%",
+      "pct": "83",
+      "color": "#f97316",
+      "icon_src": "./assets/viettel-icon-v1/icons/warning.svg",
+      "icon_alt": "High",
+      "label": "Cao"
+    },
+    {
+      "value": "40%",
+      "pct": "100",
+      "color": "#22c55e",
+      "icon_src": "./assets/viettel-icon-v1/icons/info.svg",
+      "icon_alt": "Medium",
+      "label": "Trung bình"
+    },
+    {
+      "value": "10%",
+      "pct": "25",
+      "color": "#0ea5e9",
+      "icon_src": "./assets/viettel-icon-v1/icons/check.svg",
+      "icon_alt": "Low",
+      "label": "Thấp"
+    }
+  ],
+  "slide_mode": "16x9"
+}

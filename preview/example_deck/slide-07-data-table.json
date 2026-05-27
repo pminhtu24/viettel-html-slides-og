@@ -1,0 +1,15 @@
+{
+  "layout": "data-table",
+  "title": "Các lĩnh vực bị lộ lọt dữ liệu nhiều nhất",
+  "subtitle": "Thống kê đến hết quý 3 năm 2025",
+  "headers": ["Lĩnh vực", "Số vụ", "Tác động chính"],
+  "rows": [
+    ["Dịch vụ tiêu dùng - Cá nhân", "62", "177+ triệu bản ghi"],
+    ["Bán lẻ - Thương mại điện tử", "29", "~6.1 triệu bản ghi"],
+    ["Giáo dục - Edtech", "28", "~13 triệu bản ghi"],
+    ["Tài chính - Ngân hàng", "17", "195+ triệu bản ghi"],
+    ["Năng lượng - Hạ tầng thiết yếu", "14", "11.6+ triệu bản ghi, 70 GB"],
+    ["Dịch vụ công", "5", "23+ triệu bản ghi"]
+  ],
+  "slide_mode": "16x9"
+}

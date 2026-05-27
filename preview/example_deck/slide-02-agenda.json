@@ -1,0 +1,15 @@
+{
+  "layout": "agenda",
+  "title": "Nội dung trình bày",
+  "subtitle": "Tổng hợp từ báo cáo 46 trang · tập trung quyết định điều hành",
+  "eyebrow": "ATTT Việt Nam Q3/2025",
+  "active_index": 1,
+  "items": [
+    { "number": "1", "title": "Tín hiệu rủi ro nổi bật", "time": "Trang 4-6" },
+    { "number": "2", "title": "Lộ lọt dữ liệu và mã độc", "time": "Trang 8-16" },
+    { "number": "3", "title": "Lừa đảo, giả mạo", "time": "Trang 17-21" },
+    { "number": "4", "title": "Lỗ hổng, DDoS, APT", "time": "Trang 22-38" },
+    { "number": "5", "title": "Khuyến nghị và lộ trình 12 tuần", "time": "Trang 40-45" }
+  ],
+  "slide_mode": "16x9"
+}

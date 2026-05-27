@@ -1,0 +1,26 @@
+{
+  "layout": "bar-insight",
+  "title": "Diễn biến lộ lọt dữ liệu và thông tin tài khoản",
+  "subtitle": "So sánh theo quý năm 2025 tại Việt Nam",
+  "summary_cards": [
+    { "label": "Bản ghi tài khoản Q3/2025", "value": "6,493,912", "tone": "highlight" },
+    { "label": "Mức tăng so với Q2", "value": "+64%", "tone": "" },
+    { "label": "Vụ rao bán dữ liệu", "value": "221", "tone": "" },
+    { "label": "Dung lượng lộ lọt", "value": "73 GB", "tone": "" }
+  ],
+  "chart_title": "Bản ghi tài khoản bị lộ theo quý",
+  "chart_note": "Nguồn: Viettel Threat Intelligence",
+  "bars": [
+    { "label": "Q1/2025", "value": "3,958,594", "pct": "61", "color": "#0ea5e9" },
+    { "label": "Q2/2025", "value": "4,521,299", "pct": "70", "color": "#22c55e" },
+    { "label": "Q3/2025", "value": "6,493,912", "pct": "100", "color": "#ef4444" }
+  ],
+  "insight_title": "Nhận định",
+  "insight_items": [
+    "Stealer malware và mô hình Stealer-as-a-Service là động lực tăng chính.",
+    "Thông tin xác thực email, SSO, VPN là mục tiêu ưu tiên do giá trị truy cập cao.",
+    "Sự cố công khai tài liệu/mã nguồn làm gia tăng nguy cơ xâm nhập chuỗi tiếp theo."
+  ],
+  "source": "Tổng hợp từ trang 8-13 của báo cáo",
+  "slide_mode": "16x9"
+}

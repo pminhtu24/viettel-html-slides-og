@@ -1,0 +1,16 @@
+{
+  "layout": "gantt",
+  "title": "Lộ trình 12 tuần giảm thiểu rủi ro ưu tiên",
+  "subtitle": "Kế hoạch thực thi khuyến nghị từ báo cáo",
+  "kicker": "Execution Roadmap · Q4/2025",
+  "task_header": "Hạng mục",
+  "columns": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+  "rows": [
+    { "label": "Rà soát tài khoản lộ lọt + MFA", "left": "0", "width": "25", "text": "Khóa tài khoản rủi ro" },
+    { "label": "Vá lỗ hổng trọng yếu (ToolShell, WinRAR, legacy CVE)", "left": "8", "width": "33", "text": "Ưu tiên hệ thống Internet-facing" },
+    { "label": "Giám sát DDoS và hardening DNS", "left": "33", "width": "33", "text": "Chống Carpet Bombing/Water Torture" },
+    { "label": "Threat Hunting theo TTP APT", "left": "50", "width": "33", "text": "WinRM, sideload, credential dump" },
+    { "label": "Diễn tập sự cố + hoàn thiện playbook", "left": "75", "width": "25", "text": "Tabletop + kỹ thuật" }
+  ],
+  "slide_mode": "16x9"
+}
