@@ -1,0 +1,24 @@
+{
+  "layout": "org-hierarchy",
+  "title": "Sơ đồ tổ chức khối ATTT",
+  "subtitle": "Cấu trúc điều hành và triển khai",
+  "top_node_name": "Nguyễn Văn A",
+  "top_node_title": "Giám đốc khối",
+  "level_2": [
+    { "name": "Trần Thị B", "title": "Phó giám đốc vận hành" },
+    { "name": "Lê Văn C", "title": "Phó giám đốc kỹ thuật" }
+  ],
+  "level_3": [
+    { "name": "Phạm D", "title": "Trưởng nhóm SOC" },
+    { "name": "Hoàng E", "title": "Trưởng nhóm IR" },
+    { "name": "Vũ F", "title": "Trưởng nhóm AppSec" },
+    { "name": "Bùi G", "title": "Trưởng nhóm GRC" }
+  ],
+  "level_4": [
+    { "name": "Nhóm 1", "title": "Chuyên viên SOC" },
+    { "name": "Nhóm 2", "title": "Chuyên viên IR" },
+    { "name": "Nhóm 3", "title": "Chuyên viên AppSec" },
+    { "name": "Nhóm 4", "title": "Chuyên viên GRC" }
+  ],
+  "slide_mode": "16x9"
+}

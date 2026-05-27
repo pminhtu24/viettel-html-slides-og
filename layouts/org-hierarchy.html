@@ -1,0 +1,54 @@
+<div class="layout-org-hierarchy animate-fade-up">
+    <section class="org-chart-board">
+        <div class="org-level org-level-1">
+            <article class="org-node org-node-root">
+                <p class="org-node-name">{{top_node_name}}</p>
+                <p class="org-node-title">{{top_node_title}}</p>
+            </article>
+        </div>
+
+        <div class="org-connect org-connect-root">
+            <span class="org-root-stem"></span>
+            <span class="org-root-rail"></span>
+        </div>
+
+        <div class="org-level org-level-2">
+            {{#each level_2}}
+            <article class="org-node org-node-lead">
+                <p class="org-node-name">{{name}}</p>
+                <p class="org-node-title">{{title}}</p>
+            </article>
+            {{/each}}
+        </div>
+
+        <div class="org-connect org-connect-l2">
+            {{#each level_2}}
+            <span class="org-stem"></span>
+            {{/each}}
+        </div>
+
+        <div class="org-level org-level-3">
+            {{#each level_3}}
+            <article class="org-node org-node-manager">
+                <p class="org-node-name">{{name}}</p>
+                <p class="org-node-title">{{title}}</p>
+            </article>
+            {{/each}}
+        </div>
+
+        <div class="org-connect org-connect-l3">
+            {{#each level_3}}
+            <span class="org-stem"></span>
+            {{/each}}
+        </div>
+
+        <div class="org-level org-level-4">
+            {{#each level_4}}
+            <article class="org-node org-node-staff">
+                <p class="org-node-name">{{name}}</p>
+                <p class="org-node-title">{{title}}</p>
+            </article>
+            {{/each}}
+        </div>
+    </section>
+</div>
