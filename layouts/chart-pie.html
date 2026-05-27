@@ -51,15 +51,43 @@
 
     let start = 0;
     const segments = [];
-    items.forEach((item) => {
+    const css = getComputedStyle(document.documentElement);
+    const fallbackRemainder = css.getPropertyValue("--vt-gray-light").trim() || "#F2F2F2";
+    const palette = [
+      css.getPropertyValue("--cp-palette-1").trim() || "#12436D",
+      css.getPropertyValue("--cp-palette-2").trim() || "#28A197",
+      css.getPropertyValue("--cp-palette-3").trim() || "#801650",
+      css.getPropertyValue("--cp-palette-4").trim() || "#F46A25",
+      css.getPropertyValue("--cp-palette-5").trim() || "#3D3D3D",
+      css.getPropertyValue("--cp-palette-6").trim() || "#A285D1"
+    ];
+    const used = new Set(palette.map((c) => c.toLowerCase()));
+    function randomExtraColor() {
+      for (let i = 0; i < 24; i += 1) {
+        const hue = Math.floor(Math.random() * 360);
+        const sat = 62 + Math.floor(Math.random() * 24);
+        const light = 42 + Math.floor(Math.random() * 16);
+        const c = `hsl(${hue} ${sat}% ${light}%)`;
+        if (!used.has(c.toLowerCase())) {
+          used.add(c.toLowerCase());
+          return c;
+        }
+      }
+      return `hsl(${Math.floor(Math.random() * 360)} 72% 50%)`;
+    }
+
+    items.forEach((item, idx) => {
       const pct = Math.max(0, Math.min(100, parseFloat(item.dataset.pct || "0") || 0));
-      const color = item.dataset.color || "#111827";
+      const color = idx < palette.length ? palette[idx] : randomExtraColor();
+      item.dataset.color = color;
+      const swatch = item.querySelector(".cp-swatch");
+      if (swatch) swatch.style.background = color;
       const end = start + pct;
       segments.push(`${color} ${start}% ${end}%`);
       start = end;
     });
     if (start < 100) {
-      segments.push(`#e5e7eb ${start}% 100%`);
+      segments.push(`${fallbackRemainder} ${start}% 100%`);
     }
     donut.style.background = `conic-gradient(${segments.join(", ")})`;
 
