@@ -8,7 +8,7 @@
 
 ## Canonical Reference Deck Policy
 
-Use ./preview/bao-cao-attt-from-textonly-skill/ as a style and coverage reference, not a fixed sequence. Keep the visual language and layout quality, but freely adapt slide order, layout selection, and content grouping to best fit the narrative.
+Use ./preview/example_deck as a style and coverage reference, not a fixed sequence. Keep the visual language and layout quality, but freely adapt slide order, layout selection, and content grouping to best fit the narrative.
 
 - One slide must use exactly one layout template (no mixed-layout slide composition).
 - Keep full layout coverage in canonical decks when length allows (each supported layout appears at least once).
